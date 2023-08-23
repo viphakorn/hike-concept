@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/labor-union-regular.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/nickainley-regular.woff2" crossorigin />
+    <script type="module" src="/src/main.js" defer></script>
+    <title>Hike Concept</title>
+  </head>
+  <body class="bg-light-gray font-montserrat">
+    <header class="absolute left-[50%] top-[40px] flex w-full max-w-[1220px] translate-x-[-50%] flex-col gap-[30px] px-4 xl:px-0">
+      <a href="/">
+        <img src="images/logo.png" alt="" class="mx-auto" />
+        <span class="sr-only">Logo Click to go to home</span>
+      </a>
+      <nav class="flex flex-col items-center justify-between gap-4 md:flex-row">
+        <ul class="flex flex-wrap justify-center gap-4 lg:gap-[32px]">
+          <li><a class="inline-flex rounded-[10px] px-[10px] py-[6px] font-semibold leading-none text-white transition-colors duration-300 hover:bg-gray" href="/">Home</a></li>
+          <li><a class="inline-flex rounded-[10px] px-[10px] py-[6px] font-semibold leading-none text-white transition-colors duration-300 hover:bg-gray" href="#about">About</a></li>
+          <li><a class="inline-flex rounded-[10px] px-[10px] py-[6px] font-semibold leading-none text-white transition-colors duration-300 hover:bg-gray" href="#package">Package</a></li>
+          <li><a class="inline-flex rounded-[10px] px-[10px] py-[6px] font-semibold leading-none text-white transition-colors duration-300 hover:bg-gray" href="#gallery">Gallery</a></li>
+          <li><a class="inline-flex rounded-[10px] px-[10px] py-[6px] font-semibold leading-none text-white transition-colors duration-300 hover:bg-gray" href="#contacts">Contacts</a></li>
+        </ul>
+        <div class="flex h-[40px] w-full max-w-[240px] overflow-hidden rounded-full bg-white px-[8px]">
+          <img src="/images/search-icon.svg" width="22" height="22" alt="" />
+          <label for="search" class="sr-only">Search</label>
+          <input type="search" name="search" id="search" placeholder="Search" class="mx-auto w-full px-4 font-semibold text-midnight outline-none placeholder:text-center placeholder:text-silver" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="grid min-h-[1015px] place-items-center">
+        <img
+          src="images/bg-hero.jpg"
+          alt=""
+          role="presentation"
+          class="col-span-full row-span-full h-full max-h-[1015px] w-full select-none object-cover"
+          width="1440"
+          height="1015"
+          draggable="false"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="col-span-full row-span-full grid max-w-[1140px] items-end gap-4 px-4 pt-[180px] md:grid-cols-2 xl:px-0 xl:pt-0">
+          <div
+            class="relative mb-[48px] grid h-[200px] w-full max-w-[490px] place-items-center p-4 before:absolute before:inset-0 before:z-10 before:bg-orange before:opacity-[0.64] before:mix-blend-multiply before:content-[''] lg:px-[36px] lg:py-[30px]"
+          >
+            <img src="images/five-stars.svg" alt="" class="relative z-20 mx-auto" />
+            <blockquote class="relative z-20 mt-[24px] text-center text-white">
+              <p class="mx-auto leading-none lg:text-[18px]">
+                “ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm <br />
+                euismod tincidunt ut laoreet dolore magna”
+              </p>
+              <cite class="mt-[24px] block font-labor-union not-italic">- QUOTES -</cite>
+            </blockquote>
+          </div>
+          <div class="order-first flex flex-col items-center md:order-last">
+            <img src="images/mountain-icon.png" alt="" />
+            <p class="mb-[66px] max-w-[460px] text-center font-semibold text-white lg:text-[21px]">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            </p>
+            <a
+              href="#about"
+              class="inline-flex h-[40px] w-[168px] items-center justify-center rounded-full border-[6px] border-white font-semibold text-white transition-colors duration-300 hover:bg-white hover:text-midnight"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="grid min-h-[675px] place-items-center bg-orange">
+        <img src="images/shape1.png" alt="" class="col-span-full row-span-full w-full translate-y-[-50%] self-start" />
+        <div class="col-span-full row-span-full mt-[24px] grid max-w-[850px] place-items-center px-4 xl:px-0">
+          <h2 class="mb-[20px] text-center text-5xl leading-none text-midnight lg:text-[59px]">
+            1000+ Route. 1 Million Hikers. <br />
+            Memorable Memories.
+          </h2>
+          <div class="grid place-items-center">
+            <img src="images/shape2.svg" alt="" width="784" height="210" class="xabsolute xinset-0 col-span-full row-span-full select-none" draggable="false" loading="lazy" decoding="async" />
+            <p class="relative z-10 col-span-full row-span-full max-w-[450px] text-center text-white lg:text-[21px]">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="package" class="grid min-h-[1075px]">
+        <img src="images/bg-choose-level.jpg" alt="" class="col-span-full row-span-full h-full max-h-[1075px] w-full select-none object-cover" draggable="false" loading="lazy" decoding="async" />
+        <div class="col-span-full row-span-full mx-auto mt-[66px] max-w-[1105px] px-4 xl:px-0">
+          <h2 class="text-center text-3xl font-bold text-midnight lg:text-[37px]">Choose Your Level</h2>
+          <div class="mt-[40px] grid gap-8 md:grid-cols-3 lg:gap-[138px]">
+            <div class="max-w-[260px]">
+              <h3 class="text-center text-4xl font-light lg:text-[47px]">Beginner</h3>
+              <hr class="my-[20px] w-[250px] border-midnight" />
+              <p class="mb-[44px] font-light lg:text-[20px]">Lorem ipsum dolor sit amet. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+              <a
+                href="#"
+                class="inline-flex h-[34px] w-[168px] items-center justify-center rounded-full border-[2px] border-midnight font-semibold text-midnight transition-colors duration-300 hover:bg-midnight hover:text-white"
+                >Learn More</a
+              >
+            </div>
+            <div class="max-w-[260px]">
+              <h3 class="text-center text-4xl font-light lg:text-[47px]">Experienced</h3>
+              <hr class="my-[20px] w-[250px] border-midnight" />
+              <p class="mb-[44px] font-light lg:text-[20px]">Lorem ipsum dolor sit amet. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+              <a
+                href="#"
+                class="inline-flex h-[34px] w-[168px] items-center justify-center rounded-full border-[2px] border-midnight font-semibold text-midnight transition-colors duration-300 hover:bg-midnight hover:text-white"
+                >Learn More</a
+              >
+            </div>
+            <div class="max-w-[260px]">
+              <h3 class="text-center text-4xl font-light lg:text-[47px]">Expert</h3>
+              <hr class="my-[20px] w-[250px] border-midnight" />
+              <p class="mb-[44px] font-light lg:text-[20px]">Lorem ipsum dolor sit amet. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+              <a
+                href="#"
+                class="inline-flex h-[34px] w-[168px] items-center justify-center rounded-full border-[2px] border-midnight font-semibold text-midnight transition-colors duration-300 hover:bg-midnight hover:text-white"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hiking-route" class="grid min-h-[910px]">
+        <img src="images/bg-hiking-route.jpg" alt="" class="col-span-full row-span-full h-full max-h-[910px] w-full select-none object-cover" draggable="false" loading="lazy" decoding="async" />
+        <div class="col-span-full row-span-full flex flex-col items-center justify-center gap-[50px] px-4 text-center xl:px-0">
+          <h2 class="text-[37px] font-bold text-midnight">Hiking Route</h2>
+          <div class="grid min-h-[550px] w-full max-w-[1260px] justify-items-center gap-[36px] border-[7px] border-orange p-4 sm:grid-cols-2 sm:content-center">
+            <div class="flex h-[40px] w-full max-w-[450px] self-start rounded-full bg-orange p-[8px] sm:ml-auto">
+              <img src="images/search-icon-white.svg" alt="" width="22" height="22" />
+              <label for="search-route" class="sr-only">Search Route</label>
+              <input
+                type="search"
+                name="search route"
+                id="search-route"
+                placeholder="Search"
+                class="w-full bg-transparent px-4 font-semibold text-white outline-none placeholder:text-center placeholder:text-white"
+              />
+            </div>
+            <div>
+              <span class="sr-only">Hiking Route Result</span>
+            </div>
+          </div>
+          <p class="mx-auto max-w-[470px] text-[21px] font-semibold leading-6 text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm euismod tincidunt ut laoreet dol</p>
+        </div>
+      </section>
+
+      <section id="our-journey" class="grid min-h-[400px] place-items-center bg-orange">
+        <div class="mx-auto flex max-w-[850px] flex-col items-center justify-center gap-[40px] px-4 py-8 text-center text-midnight xl:px-0">
+          <h2 class="text-4xl font-light lg:text-[67px]">OUR <span class="font-bold">JOURNEY</span></h2>
+          <p class="text-lg leading-6 lg:text-[21px]">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore</p>
+          <ul class="flex w-full justify-around text-xl font-bold lg:text-[25px]">
+            <li>Hiking</li>
+            <li>Fun</li>
+            <li>Health</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="hiking-time" class="grid min-h-[1015px] bg-light-gray">
+        <img
+          src="images/bg-hiking-time.jpg"
+          alt=""
+          class="col-span-full row-span-full h-full max-h-[1015px] w-full select-none object-cover"
+          draggable="false"
+          style="
+            mask-image: url(images/bg-hiking-time-mask.png);
+            mask-position: bottom;
+            mask-size: cover;
+            -webkit-mask-image: url(images/bg-hiking-time-mask.png);
+            -webkit-mask-position: bottom;
+            -webkit-mask-size: cover;
+          "
+        />
+        <div class="relative z-20 col-span-full row-span-full mx-auto max-w-[1050px] px-4 py-8 xl:px-0">
+          <h2 class="mt-[105px] text-center leading-none text-white">
+            <span class="font-nickainley text-5xl lg:text-[83px]">It's Time For</span>
+            <br />
+            <span class="font-labor-union text-6xl lg:text-[120px]">HIKING</span>
+          </h2>
+          <div class="col-span-full row-span-full mt-[105px] grid gap-x-4 gap-y-24 md:grid-cols-3 lg:gap-[70px]">
+            <div class="relative rounded-[50px] border-[5px] border-white p-[6px]">
+              <h3 class="absolute left-[50%] top-0 inline-flex h-[62px] w-[210px] translate-x-[-50%] translate-y-[-50%] items-center justify-center bg-orange text-[38px] font-bold text-midnight">
+                ROUTE 1
+              </h3>
+              <img src="images/route1.jpg" alt="" class="rounded-[40px]" width="280" height="370" loading="lazy" decoding="async" />
+              <p class="absolute bottom-0 left-[50%] inline-flex h-[46px] w-[157px] translate-x-[-50%] translate-y-[100%] items-center justify-center bg-red text-[29px] font-bold text-white">
+                20% OFF
+              </p>
+            </div>
+            <div class="relative rounded-[50px] border-[5px] border-white p-[6px]">
+              <h3 class="absolute left-[50%] top-0 inline-flex h-[62px] w-[210px] translate-x-[-50%] translate-y-[-50%] items-center justify-center bg-orange text-[38px] font-bold text-midnight">
+                ROUTE 2
+              </h3>
+              <img src="images/route2.jpg" alt="" class="rounded-[40px]" width="280" height="370" loading="lazy" decoding="async" />
+              <p class="absolute bottom-0 left-[50%] inline-flex h-[46px] w-[157px] translate-x-[-50%] translate-y-[100%] items-center justify-center bg-red text-[29px] font-bold text-white">
+                30% OFF
+              </p>
+            </div>
+            <div class="relative rounded-[50px] border-[5px] border-white p-[6px]">
+              <h3 class="absolute left-[50%] top-0 inline-flex h-[62px] w-[210px] translate-x-[-50%] translate-y-[-50%] items-center justify-center bg-orange text-[38px] font-bold text-midnight">
+                ROUTE 3
+              </h3>
+              <img src="images/route3.jpg" alt="" class="rounded-[40px]" width="280" height="370" loading="lazy" decoding="async" />
+              <p class="absolute bottom-0 left-[50%] inline-flex h-[46px] w-[157px] translate-x-[-50%] translate-y-[100%] items-center justify-center bg-red text-[29px] font-bold text-white">
+                40% OFF
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-journey-video" class="relative isolate z-10 grid min-h-[820px] place-items-center bg-light-gray">
+        <img
+          src="images/tree.svg"
+          alt=""
+          class="relative -z-10 col-span-full row-span-full max-h-[820px] w-full translate-y-[100px] select-none self-end"
+          width="1440"
+          height="796"
+          draggable="false"
+        />
+        <div class="col-span-full row-span-full mx-auto grid max-w-[1050px] place-items-center px-4 py-8 xl:px-0">
+          <div class="flex flex-col items-center gap-4 md:flex-row lg:gap-[140px]">
+            <div class="max-w-[520px]">
+              <p class="mb-[64px] text-center text-xl text-midnight md:text-left lg:text-[30px]">LOREM IPSUM</p>
+              <div class="mb-[20px] grid w-fit cursor-pointer place-items-center">
+                <img src="images/video-thumbnail.jpg" alt="" width="520" height="290" class="col-span-full row-span-full" />
+                <button class="col-span-full row-span-full">
+                  <img src="images/play-icon.svg" alt="" />
+                  <span class="sr-only">play button</span>
+                </button>
+              </div>
+              <p class="text-center text-[16px] leading-[20px] text-midnight">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid <br />
+                magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+              </p>
+            </div>
+            <h2 class="order-first text-4xl leading-none text-midnight md:order-last lg:text-[64px]">
+              <span class="font-light">OUR</span>
+              <br />
+              <span class="font-bold">JOURNEY</span>
+            </h2>
+          </div>
+          <button
+            class="mt-[120px] inline-flex h-[45px] w-[225px] items-center justify-center bg-orange text-[22px] font-light text-midnight transition-colors duration-300 hover:bg-midnight hover:text-orange"
+          >
+            MORE VIDEOS
+          </button>
+        </div>
+      </section>
+
+      <section id="gallery" class="isolate grid place-items-center bg-light-gray">
+        <img src="images/bg-gallery.svg" alt="" role="presentation" class="relative -z-20 col-span-full row-span-full h-full w-full select-none object-cover" draggable="false" />
+        <img src="/images/tree-darker.svg" alt="" role="presentation" class="relative -z-10 col-span-full row-span-full w-full select-none self-end" draggable="false" />
+        <div class="col-span-full row-span-full grid place-items-center gap-8 py-8 lg:gap-0">
+          <h2 class="text-center text-[37px] font-bold text-midnight lg:mb-[90px]">GALLERY</h2>
+          <div class="grid max-w-[1050px] grid-cols-2 gap-4 px-4 md:grid-cols-3 lg:mb-[50px] lg:gap-x-[88px] lg:gap-y-[60px] xl:px-0">
+            <img src="images/gallery1.jpg" alt="" width="290" height="190" loading="lazy" decoding="async" />
+            <img src="images/gallery2.jpg" alt="" width="290" height="190" loading="lazy" decoding="async" />
+            <img src="images/gallery3.jpg" alt="" width="290" height="190" loading="lazy" decoding="async" />
+            <img src="images/gallery4.jpg" alt="" width="290" height="190" loading="lazy" decoding="async" />
+            <img src="images/gallery5.jpg" alt="" width="290" height="190" loading="lazy" decoding="async" />
+            <img src="images/gallery6.jpg" alt="" width="290" height="190" loading="lazy" decoding="async" />
+            <img src="images/gallery7.jpg" alt="" width="290" height="190" loading="lazy" decoding="async" />
+            <img src="images/gallery8.jpg" alt="" width="290" height="190" loading="lazy" decoding="async" />
+            <img src="images/gallery9.jpg" alt="" width="290" height="190" loading="lazy" decoding="async" />
+          </div>
+          <button class="inline-flex h-[45px] w-[225px] items-center justify-center bg-white text-[22px] font-light text-midnight transition-colors duration-300 hover:bg-midnight hover:text-white">
+            MORE PHOTOS
+          </button>
+        </div>
+      </section>
+
+      <section id="contacts" class="grid min-h-[650px] place-items-center bg-midnight">
+        <div class="mx-auto grid max-w-[1110px] place-items-center px-4 py-8 xl:px-0">
+          <img src="images/logo-large.png" alt="" class="mb-8 lg:mb-[90px]" />
+          <div class="grid sm:grid-cols-2">
+            <p class="text-center text-2xl leading-[60px] text-white sm:border-r sm:border-white sm:pr-4 sm:text-left lg:pr-[115px] lg:text-[31px]">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid
+            </p>
+            <hr class="my-8 border border-white sm:hidden" />
+            <div class="space-y-[28px] sm:border-l sm:border-white sm:pl-4 lg:pl-[115px]">
+              <h2 class="text-center text-2xl font-light leading-6 text-white sm:text-left lg:text-[31px]">find us here</h2>
+              <ul class="mx-auto grid max-w-[350px] justify-items-center gap-y-4 md:grid-cols-2">
+                <li class="sm:ml-6">
+                  <a class="group inline-flex items-center gap-[12px] text-[13px] font-bold text-white transition-colors duration-300 hover:text-orange" href="https://www.facebook.com/">
+                    <img
+                      src="images/facebook-icon.png"
+                      alt=""
+                      width="35"
+                      height="35"
+                      class="group-hover:brightness-[0.6] group-hover:hue-rotate-[34deg] group-hover:saturate-[5] group-hover:sepia group-hover:filter"
+                    />
+                    your_account
+                  </a>
+                </li>
+                <li class="sm:ml-6">
+                  <a class="group inline-flex items-center gap-[12px] text-[13px] font-bold text-white transition-colors duration-300 hover:text-orange" href="https://www.instagram.com/">
+                    <img
+                      src="images/instagram-icon.png"
+                      alt=""
+                      width="35"
+                      height="35"
+                      class="group-hover:brightness-[0.6] group-hover:hue-rotate-[34deg] group-hover:saturate-[5] group-hover:sepia group-hover:filter"
+                    />
+                    your_account
+                  </a>
+                </li>
+                <li class="sm:ml-6">
+                  <a class="group inline-flex items-center gap-[12px] text-[13px] font-bold text-white transition-colors duration-300 hover:text-orange" href="https://www.youtube.com/">
+                    <img
+                      src="images/youtube-icon.png"
+                      alt=""
+                      width="35"
+                      height="35"
+                      class="group-hover:brightness-[0.6] group-hover:hue-rotate-[34deg] group-hover:saturate-[5] group-hover:sepia group-hover:filter"
+                    />
+                    your_account
+                  </a>
+                </li>
+                <li class="sm:ml-6">
+                  <a class="group inline-flex items-center gap-[12px] text-[13px] font-bold text-white transition-colors duration-300 hover:text-orange" href="https://www.twitter.com/">
+                    <img
+                      src="images/twitter-icon.png"
+                      alt=""
+                      width="35"
+                      height="35"
+                      class="group-hover:brightness-[0.6] group-hover:hue-rotate-[34deg] group-hover:saturate-[5] group-hover:sepia group-hover:filter"
+                    />
+                    your_account
+                  </a>
+                </li>
+              </ul>
+              <h2 class="text-center text-2xl font-light leading-6 text-white sm:text-left lg:text-[31px]">Messages us here</h2>
+              <p class="text-center text-2xl font-bold leading-6 text-white lg:text-[31px]">your@email.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="grid min-h-[385px] place-items-center bg-light-gray">
+      <div class="flex max-w-[1175px] flex-col gap-4 px-4 py-8 sm:flex-row lg:gap-[80px] xl:px-0">
+        <div class="space-y-[40px]">
+          <h2 class="text-center text-2xl font-bold leading-6 text-midnight sm:text-left lg:text-[31px]">ABOUT</h2>
+          <p class="text-center leading-6 text-midnight sm:text-left lg:text-[22px]">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          </p>
+        </div>
+        <div class="space-y-[40px]">
+          <h3 class="text-center text-xl font-bold leading-6 text-midnight sm:text-left lg:text-[25px]">MENU</h3>
+          <ul class="space-y-[8px] text-center">
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#team">TEAM</a></li>
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#join-us">JOIN US</a></li>
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#career">CAREER</a></li>
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#goals">GOALS</a></li>
+          </ul>
+        </div>
+        <div class="space-y-[40px]">
+          <h3 class="text-center text-xl font-bold leading-6 text-midnight sm:text-left lg:text-[25px]">INFORMATION</h3>
+          <ul class="space-y-[8px] text-center">
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#team">TEAM</a></li>
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#join-us">JOIN US</a></li>
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#career">CAREER</a></li>
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#goals">GOALS</a></li>
+          </ul>
+        </div>
+        <div class="space-y-[40px]">
+          <h3 class="text-center text-xl font-bold leading-6 text-midnight sm:text-left lg:text-[25px]">LEGAL</h3>
+          <ul class="space-y-[8px] text-center">
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#team">TEAM</a></li>
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#join-us">JOIN US</a></li>
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#career">CAREER</a></li>
+            <li><a class="text-xl font-light leading-6 text-midnight transition-colors duration-300 hover:text-orange lg:text-[25px]" href="#goals">GOALS</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center text-midnight transition-colors duration-300 hover:text-orange">
+        <a href="https://www.freepik.com/free-psd/hike-concept-template_7007469.htm#query=website%20templates&position=44&from_view=search&track=ais" target="_blank" rel="noopener noreferrer"
+          >Designed by Freepik</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
