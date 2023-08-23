@@ -22,8 +22,8 @@ I transformed a PSD file sourced from Freepik into a dynamic and user-friendly w
 ### Links
 
 - PSD file: [Freepik](https://www.freepik.com/free-psd/hike-concept-template_7007469.htm#query=website%20templates&position=44&from_view=search&track=ais)
-- Repository URL: [viphakorn](https://github.com/viphakorn/)
-- Live Site URL: [Github Pages](https://viphakorn.github.io/)
+- Repository URL: [viphakorn](https://github.com/viphakorn/hike-concept/)
+- Live Site URL: [Github Pages](https://viphakorn.github.io/hike-concept/)
 
 ## My process
 
